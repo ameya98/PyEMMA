@@ -208,7 +208,7 @@ class SideChainTorsions(DihedralFeature):
         if not valid:
             raise ValueError('Could not determine any side chain dihedrals for your topology!')
         self._prefix_label_lengths = np.array([len(indices_dict[k]) if k in which else 0 for k in self.options])
-        indices = np.vstack(valid.values())
+        indices = np.vstack(list(valid.values()))
 
         super(SideChainTorsions, self).__init__(top=top, dih_indexes=indices, deg=deg, cossin=cossin, periodic=periodic)
 
