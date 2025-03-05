@@ -1,8 +1,18 @@
-=============================================
-This project is no longer actively maintained
-=============================================
+======================
+Ameya's Fork of PyEMMA
+======================
 
-An alternative package reflecting most of PyEMMA's functionality is `deeptime <https://github.com/deeptime-ml/deeptime>`__.
+With `pip`::
+
+   pip install git+https://github.com/ameya98/PyEMMA.git
+
+With `uv`::
+
+   uv pip install git+https://github.com/ameya98/PyEMMA.git
+
+This should work with more recent versions of `numpy`.
+
+Original README contents below:
 
 =====================================
 EMMA (Emma's Markov Model Algorithms)
